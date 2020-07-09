@@ -20,13 +20,13 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](alexoid1.github.io/animation-slider/)
+[Live Demo Link](https://alexoid1.github.io/Animation-slider/)
 
 
 ## Getting Started
 
 **Navigation bar**
-- Go to (https://github.com/Alexoid1/Animation-slider) and have a look around. 
+- Go to (https://alexoid1.github.io/Animation-slider/) and have a look around. 
 
 
 
