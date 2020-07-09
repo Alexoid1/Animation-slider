@@ -37,20 +37,34 @@ body{
     background-color:black;
 }
 .sub{
-    
-    width: 300px;
-    
-    
-    
-
+  width: 300px;
 }
+
 .boton{
     cursor: pointer;
+    
 
 }
-#boton .play:hover{
-    color: #ffc600;
+#boton {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    
+    transform: translateX(30px) translateY(-26px);
 }
+.shoot {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    
+}
+
+
+.play:hover{
+    color: white;
+}
+
 #boton2 .play2:hover{
     color: white;
 }
@@ -62,14 +76,13 @@ body{
 }
 #boton5 :hover{
     background: none;
-    color: white;
-    
-    
+    color: white;    
 }
+
 .play{
-    background: white;
-    font-size:50px;
-    line-height: 2em;
+    background: none;
+    font-size:40px;
+    line-height: 1em;
     font-family: 'Alatsi', sans-serif;
     color: black;
 
@@ -87,7 +100,7 @@ body{
 
 }
 .play3{
-    background: white;
+    background: none;
     font-size:50px;
     line-height: 2em;
     font-family: 'Alatsi', sans-serif;
@@ -101,7 +114,7 @@ body{
     color:firebrick;
 }
 .play4{
-    background: white;
+    background: none;
     font-size:50px;
     line-height: 2em;
     font-family: 'Alatsi', sans-serif;
@@ -119,22 +132,135 @@ a{
 }
 .body{
     animation-name: shoot;
-    animation-duration: 5s;
-    
+    animation-duration: 9s;   
 }
-@keyframes shoot {
-    0% {
-        filter: blur(0px);
+
+.shooting {
+    animation-name: shootA;
+    animation-duration: 7s;
+}
+@keyframes shootA {
+    1%{
+        background: tomato;
+    }
+
+    2%{
+        background: none;
     }
     100% {
-        filter: blur(20px);
+        background: none;
     }
 }
+
+.shootTemblor {
+    animation-name: shootTem;
+    animation-duration: 10s;   
+}
+@keyframes shootTem{
+    0%{
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    
+    95% {
+        transform: rotate(-10deg);
+    }
+    
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
+.temblor {
+    animation-name: temblor;
+    animation-duration: 3s;
+}
+
+@keyframes temblor {
+    0%{
+        transform: rotate(1deg);
+    }
+    1% {
+        transform: rotate(-1deg);
+    }
+    2% {
+        transform: rotate(1deg);
+    }
+    3% {
+        transform: rotate(-1deg);
+    }
+
+    5% {
+        transform: rotate(1deg);
+    }
+    6% {
+        transform: rotate(-1deg);
+    }
+    7% {
+        transform: rotate(1deg);
+    }
+    8% {
+        transform: rotate(-1deg);
+    }
+
+    9% {
+        transform: rotate(1deg);
+    }
+    10% {
+        transform: rotate(-1deg);
+    }
+    11% {
+        transform: rotate(1deg);
+    }
+    12% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes shoot {
+    0% {
+        filter:brightness(100%) opacity(1);
+    }
+    
+    3%{
+        filter:brightness(200%) opacity(0.2);
+    }
+    4% {
+        filter:brightness(100%) opacity(1);
+    }
+    8% {
+        filter: blur(7px);
+    }
+    30% {
+        filter: blur(20px);
+    }
+    50% {
+        filter: blur(0px);
+    }
+    51% {
+        filter:  contrast(100%) brightness(100%);
+    }
+   
+    100% {
+        filter:  contrast(200%) brightness(0%)
+    }
+
+}
+
 .body2{
     animation-name: dark;
     animation-duration: 5s;
     
 }
+
 @keyframes dark {
     0% {
         filter: contrast(100%) brightness(100%);
@@ -143,6 +269,7 @@ a{
         filter: contrast(200%) brightness(0%)
     }
 }
+
 .body3{
     animation-name: blood;
     animation-duration: 8s;
@@ -159,6 +286,7 @@ a{
         filter: hue-rotate(200deg) saturate(10);
     }
 }
+
 .body4{
     animation-name: explosion;
     animation-duration: 8s;
@@ -180,9 +308,9 @@ a{
 
 .body5{
     animation-name: trueno;
-    animation-duration: 8s;
-    
+    animation-duration: 9s;  
 }
+
 @keyframes trueno {
     0% {
         filter:brightness(100%) opacity(1);
@@ -195,21 +323,21 @@ a{
     4%{
         filter:brightness(100%) opacity(1);
     }
-    5%{
+    7%{
         filter:brightness(200%) opacity(0.2) 
 
     }
-    6%{
-        filter:brightness(100%) opacity(1) ;
+    8%{
+        filter:brightness(100%) opacity(1);
     }
     30%{
         filter:blur(0px);
     }
     50%{
-        filter:blur(3px);
+        filter:blur(7px);
     }
 
-    80% {
-        filter:blur(0px);
+    100% {
+        filter:blur(70px);
     }
 }

@@ -9,6 +9,8 @@ audi4.src='sonidos/Explosivos detonó.wav'
 let audi5=new Audio();
 audi5.src='sonidos/Tormenta 3.wav'
 
+$('.carousel').carousel('pause')  //stop the slider on focus state
+
 let boton=document.getElementById('boton');
 boton.addEventListener('click',añade);
 let boton2=document.getElementById('boton2');
@@ -21,13 +23,34 @@ let boton5=document.getElementById('boton5');
 boton5.addEventListener('click' ,añade5);
 
 
-function añade(){let cont=document.querySelector('body');
-cont.className='body';
-setTimeout(quitar,5000)};
-function quitar(){
+function añade(){
     let cont=document.querySelector('body');
-    cont.className='';
-}
+    let shoot=document.querySelector('.shoot')
+    let coursel1=document.querySelector('.IMGG1')
+    coursel1.classList.add('shootTemblor')
+    shoot.classList.add('shooting')
+    cont.className='body';
+     
+   
+    
+    setTimeout(quitar1,8000)};
+    function quitar1(){
+        let shoot=document.querySelector('.shoot');
+        let cont=document.querySelector('body');
+        let coursel1=document.querySelector('.IMGG1')
+        cont.className='';
+        shoot.classList.remove('shooting');
+        coursel1.classList.remove('shootTemblor');
+       
+    }
+    
+    function quitar4(){
+        let cont=document.querySelector('body');
+        let coursel=document.querySelector('.IMGG')
+        cont.className='';
+        coursel.classList.remove('temblor'),8000
+
+    }
 
 function añade2(){
     let cont=document.querySelector('body');
@@ -42,17 +65,28 @@ function añade3(){
 };  
 function añade4(){
     let cont=document.querySelector('body');
+    let coursel=document.querySelector('.IMGG')
     cont.className='body4';
-    setTimeout(quitar,5000);
+    coursel.classList.add('temblor')
+    
+    
+    setTimeout(quitar4,8000);
+    
+    
 
 }
 function añade5(){
     let cont=document.querySelector('body');
     cont.className='body5';
-    setTimeout(quitar,8000);
+    setTimeout(quitar,9000);
 
 }
 
+function quitar(){
+    let cont=document.querySelector('body');
+    cont.className='';
+   
+}
 
 
 
