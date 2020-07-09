@@ -5,7 +5,7 @@
 
 
 
-![screenshot](./screen.png)
+![screenshot](./imagenes/CssSaturation)![screenshot](./imagenes/Rain)
 
 Additional description about the project and its features.
 
@@ -17,21 +17,22 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](alexoid1.github.io/animation-slider/)
 
 
 ## Getting Started
 
 **Navigation bar**
-- Go to (https://alexoid1.github.io/Virtual-Drum/) and have a look around. 
+- Go to (https://github.com/Alexoid1/Animation-slider) and have a look around. 
 
 
 
 
 In this project:
 
-- Add border efect on every keyboard event.
-- Add diferent sounds in every keyboard and click event.
+- Trigger different animations at the same time.
+- Use Filter and keyframes.
+- Sounds for every animation.
 
 
 
