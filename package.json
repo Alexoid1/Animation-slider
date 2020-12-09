@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Alexoid1/Animation-slider/issues"
   },
-  "homepage": "https://github.com/Alexoid1/Animation-slider#readme"
+  "homepage": "https://github.com/Alexoid1/Animation-slider#readme",
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2"
+  }
 }
