@@ -41,7 +41,7 @@ To get a local copy  and to set it up and running follow these simple example st
 
 - Browser
 - Internet
-- Download the code from repository (https://github.com/Alexoid1/Animation-slider)
+- Download the code from repository (https://github.com/Alexoid1/Animation-slider).
 
 
 ## Author
