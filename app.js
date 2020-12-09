@@ -9,7 +9,6 @@ audi4.src='sonidos/Explosivos detonó.wav'
 let audi5=new Audio();
 audi5.src='sonidos/Tormenta 3.wav'
 
-$('.carousel').carousel('pause')  //stop the slider on focus state
 
 let boton=document.getElementById('boton');
 boton.addEventListener('click',añade);
@@ -24,7 +23,7 @@ boton5.addEventListener('click' ,añade5);
 
 
 function añade(){
-    let cont=document.querySelector('body');
+    let cont=document.getElementById('carouselBody');
     let shoot=document.querySelector('.shoot')
     let coursel1=document.querySelector('.IMGG1')
     coursel1.classList.add('shootTemblor')
