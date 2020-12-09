@@ -1,15 +1,15 @@
 body{
-    font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
-    letter-spacing: .05rem;
-    font-weight: 300;
-    background-color:black;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  font-weight: 300;
+  background-color:black;
 }
 .navbar{
-    min-height: 5rem;
+  min-height: 5rem;
 }
 .bg-dark{
-    background-color: #18191d !important;
+  background-color: #18191d !important;
 }
 .btn-circle{
     display: inline-block;
@@ -20,7 +20,6 @@ body{
     color:#18191d;
     text-align: center;
     font-size: 1.5rem;
-
 }
 .vertical{
     top:50%;
