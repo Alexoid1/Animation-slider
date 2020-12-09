@@ -23,6 +23,9 @@
 [Live Demo Link](https://alexoid1.github.io/Animation-slider/)
 
 
+## Article
+[Read Article](https://hackernoon.com/creating-css3-animated-backgrounds-from-scratch-od1d3ufi)
+
 ## Getting Started
 
 **Navigation bar**
