@@ -63,8 +63,24 @@ body {
   border-radius: 100%;
 }
 
+.play {
+  background: none;
+  font-size: 40px;
+  line-height: 1em;
+  font-family: 'Alatsi', sans-serif;
+  color: black;
+}
+
 .play:hover {
   color: white;
+}
+
+.play2 {
+  background: none;
+  font-size: 50px;
+  line-height: 2em;
+  font-family: 'Alatsi', sans-serif;
+  color: black;
 }
 
 #boton2 .play2:hover {
@@ -82,22 +98,6 @@ body {
 #boton5 :hover {
   background: none;
   color: white;
-}
-
-.play {
-  background: none;
-  font-size: 40px;
-  line-height: 1em;
-  font-family: 'Alatsi', sans-serif;
-  color: black;
-}
-
-.play2 {
-  background: none;
-  font-size: 50px;
-  line-height: 2em;
-  font-family: 'Alatsi', sans-serif;
-  color: black;
 }
 
 .play3 {
