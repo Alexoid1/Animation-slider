@@ -1,342 +1,361 @@
-body{
+body {
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   font-weight: 300;
-  background-color:black;
+  background-color: black;
 }
-.navbar{
+
+.navbar {
   min-height: 5rem;
 }
-.bg-dark{
+
+.bg-dark {
   background-color: #18191d !important;
 }
-.btn-circle{
-    display: inline-block;
-    border-radius:50%;
-    height:3.20rem;
-    width:3.20rem;
-    background-color: white;
-    color:#18191d;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.vertical{
-    top:50%;
-    transform:translateY(-50%) ;
-    bottom: unset;
 
+.btn-circle {
+  display: inline-block;
+  border-radius: 50%;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: white;
+  color: #18191d;
+  text-align: center;
+  font-size: 1.5rem;
 }
-.w{
-    width:75% !important;
-    margin:auto;
-    color:white;
+
+.vertical {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
 }
-.bgh{
-    background-color:black;
+
+.w {
+  width: 75% !important;
+  margin: auto;
+  color: white;
 }
-.sub{
+
+.bgh {
+  background-color: black;
+}
+
+.sub {
   width: 300px;
 }
 
-.boton{
-    cursor: pointer;
-    
-
+.boton {
+  cursor: pointer;
 }
+
 #boton {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    
-    transform: translateX(30px) translateY(-26px);
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  transform: translateX(30px) translateY(-26px);
 }
+
 .shoot {
-    margin: auto;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
 }
 
-
-.play:hover{
-    color: white;
+.play:hover {
+  color: white;
 }
 
-#boton2 .play2:hover{
-    color: white;
-}
-.play3:hover{
-    background-color:rgba(0, 0, 0, .5);
-}
-#boton4 .play4:hover{
-    color: #ffc600;
-}
-#boton5 :hover{
-    background: none;
-    color: white;    
+#boton2 .play2:hover {
+  color: white;
 }
 
-.play{
-    background: none;
-    font-size:40px;
-    line-height: 1em;
-    font-family: 'Alatsi', sans-serif;
-    color: black;
-
+.play3:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.play2{
-    background: none;
-    font-size:50px;
-    line-height: 2em;
-    font-family: 'Alatsi', sans-serif;
-    color: black;
-    
-    
-
-
+#boton4 .play4:hover {
+  color: #ffc600;
 }
-.play3{
-    background: none;
-    font-size:50px;
-    line-height: 2em;
-    font-family: 'Alatsi', sans-serif;
-    color:firebrick;
-    border-radius: 50%;
 
-
-
+#boton5 :hover {
+  background: none;
+  color: white;
 }
-.play31{
-    color:firebrick;
-}
-.play4{
-    background: none;
-    font-size:50px;
-    line-height: 2em;
-    font-family: 'Alatsi', sans-serif;
-    color:black;
-    border-radius: 50%;
 
-
-
+.play {
+  background: none;
+  font-size: 40px;
+  line-height: 1em;
+  font-family: 'Alatsi', sans-serif;
+  color: black;
 }
-a{
-    
-    color:black;
-    background: none;
-    text-decoration: none;
+
+.play2 {
+  background: none;
+  font-size: 50px;
+  line-height: 2em;
+  font-family: 'Alatsi', sans-serif;
+  color: black;
 }
-.body{
-    animation-name: shoot;
-    animation-duration: 9s;   
+
+.play3 {
+  background: none;
+  font-size: 50px;
+  line-height: 2em;
+  font-family: 'Alatsi', sans-serif;
+  color: firebrick;
+  border-radius: 50%;
+}
+
+.play31 {
+  color: firebrick;
+}
+
+.play4 {
+  background: none;
+  font-size: 50px;
+  line-height: 2em;
+  font-family: 'Alatsi', sans-serif;
+  color: black;
+  border-radius: 50%;
+}
+
+a {
+  color: black;
+  background: none;
+  text-decoration: none;
+}
+
+.body {
+  animation-name: shoot;
+  animation-duration: 9s;
 }
 
 .shooting {
-    animation-name: shootA;
-    animation-duration: 7s;
+  animation-name: shootA;
+  animation-duration: 7s;
 }
-@keyframes shootA {
-    1%{
-        background: tomato;
-    }
 
-    2%{
-        background: none;
-    }
-    100% {
-        background: none;
-    }
+@keyframes shootA {
+  1% {
+    background: tomato;
+  }
+
+  2% {
+    background: none;
+  }
+
+  100% {
+    background: none;
+  }
 }
 
 .shootTemblor {
-    animation-name: shootTem;
-    animation-duration: 10s;   
-}
-@keyframes shootTem{
-    0%{
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    
-    95% {
-        transform: rotate(-10deg);
-    }
-    
-    100% {
-        transform: rotate(0);
-    }
+  animation-name: shootTem;
+  animation-duration: 10s;
 }
 
+@keyframes shootTem {
+  0% {
+    transform: rotate(0deg);
+  }
 
+  50% {
+    transform: rotate(0deg);
+  }
+
+  95% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
 
 .temblor {
-    animation-name: temblor;
-    animation-duration: 3s;
+  animation-name: temblor;
+  animation-duration: 3s;
 }
 
 @keyframes temblor {
-    0%{
-        transform: rotate(1deg);
-    }
-    1% {
-        transform: rotate(-1deg);
-    }
-    2% {
-        transform: rotate(1deg);
-    }
-    3% {
-        transform: rotate(-1deg);
-    }
+  0% {
+    transform: rotate(1deg);
+  }
 
-    5% {
-        transform: rotate(1deg);
-    }
-    6% {
-        transform: rotate(-1deg);
-    }
-    7% {
-        transform: rotate(1deg);
-    }
-    8% {
-        transform: rotate(-1deg);
-    }
+  1% {
+    transform: rotate(-1deg);
+  }
 
-    9% {
-        transform: rotate(1deg);
-    }
-    10% {
-        transform: rotate(-1deg);
-    }
-    11% {
-        transform: rotate(1deg);
-    }
-    12% {
-        transform: rotate(0deg);
-    }
-    
-    100% {
-        transform: rotate(0);
-    }
+  2% {
+    transform: rotate(1deg);
+  }
+
+  3% {
+    transform: rotate(-1deg);
+  }
+
+  5% {
+    transform: rotate(1deg);
+  }
+
+  6% {
+    transform: rotate(-1deg);
+  }
+
+  7% {
+    transform: rotate(1deg);
+  }
+
+  8% {
+    transform: rotate(-1deg);
+  }
+
+  9% {
+    transform: rotate(1deg);
+  }
+
+  10% {
+    transform: rotate(-1deg);
+  }
+
+  11% {
+    transform: rotate(1deg);
+  }
+
+  12% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 @keyframes shoot {
-    0% {
-        filter:brightness(100%) opacity(1);
-    }
-    
-    3%{
-        filter:brightness(200%) opacity(0.2);
-    }
-    4% {
-        filter:brightness(100%) opacity(1);
-    }
-    8% {
-        filter: blur(7px);
-    }
-    30% {
-        filter: blur(20px);
-    }
-    50% {
-        filter: blur(0px);
-    }
-    51% {
-        filter:  contrast(100%) brightness(100%);
-    }
-   
-    100% {
-        filter:  contrast(200%) brightness(0%)
-    }
+  0% {
+    filter: brightness(100%) opacity(1);
+  }
 
+  3% {
+    filter: brightness(200%) opacity(0.2);
+  }
+
+  4% {
+    filter: brightness(100%) opacity(1);
+  }
+
+  8% {
+    filter: blur(7px);
+  }
+
+  30% {
+    filter: blur(20px);
+  }
+
+  50% {
+    filter: blur(0);
+  }
+
+  51% {
+    filter: contrast(100%) brightness(100%);
+  }
+
+  100% {
+    filter: contrast(200%) brightness(0%);
+  }
 }
 
-.body2{
-    animation-name: dark;
-    animation-duration: 5s;
-    
+.body2 {
+  animation-name: dark;
+  animation-duration: 5s;
 }
 
 @keyframes dark {
-    0% {
-        filter: contrast(100%) brightness(100%);
-    }
-    100% {
-        filter: contrast(200%) brightness(0%)
-    }
+  0% {
+    filter: contrast(100%) brightness(100%);
+  }
+
+  100% {
+    filter: contrast(200%) brightness(0%);
+  }
 }
 
-.body3{
-    animation-name: blood;
-    animation-duration: 8s;
-    
+.body3 {
+  animation-name: blood;
+  animation-duration: 8s;
 }
+
 @keyframes blood {
-    0% {
-        filter: hue-rotate(0deg) saturate(1);
-    }
-    25%{
-        filter: hue-rotate(200deg) saturate(1);
-    }
-    100% {
-        filter: hue-rotate(200deg) saturate(10);
-    }
+  0% {
+    filter: hue-rotate(0deg) saturate(1);
+  }
+
+  25% {
+    filter: hue-rotate(200deg) saturate(1);
+  }
+
+  100% {
+    filter: hue-rotate(200deg) saturate(10);
+  }
 }
 
-.body4{
-    animation-name: explosion;
-    animation-duration: 8s;
-    
+.body4 {
+  animation-name: explosion;
+  animation-duration: 8s;
 }
+
 @keyframes explosion {
-    0% {
-        filter: brightness(200%) saturate(20);
-    }
-    25%{
-        filter: brightness(100%) saturate(5);
-    }
-    100% {
-        filter: brightness(100%) saturate(1);
-    }
+  0% {
+    filter: brightness(200%) saturate(20);
+  }
+
+  25% {
+    filter: brightness(100%) saturate(5);
+  }
+
+  100% {
+    filter: brightness(100%) saturate(1);
+  }
 }
 
-
-
-.body5{
-    animation-name: trueno;
-    animation-duration: 9s;  
+.body5 {
+  animation-name: trueno;
+  animation-duration: 9s;
 }
 
 @keyframes trueno {
-    0% {
-        filter:brightness(100%) opacity(1);
-    }
-    
-    3%{
-        filter:brightness(200%) opacity(0.2);
+  0% {
+    filter: brightness(100%) opacity(1);
+  }
 
-    }
-    4%{
-        filter:brightness(100%) opacity(1);
-    }
-    7%{
-        filter:brightness(200%) opacity(0.2) 
+  3% {
+    filter: brightness(200%) opacity(0.2);
+  }
 
-    }
-    8%{
-        filter:brightness(100%) opacity(1);
-    }
-    30%{
-        filter:blur(0px);
-    }
-    50%{
-        filter:blur(7px);
-    }
+  4% {
+    filter: brightness(100%) opacity(1);
+  }
 
-    100% {
-        filter:blur(70px);
-    }
+  7% {
+    filter: brightness(200%) opacity(0.2);
+  }
+
+  8% {
+    filter: brightness(100%) opacity(1);
+  }
+
+  30% {
+    filter: blur(0);
+  }
+
+  50% {
+    filter: blur(7px);
+  }
+
+  100% {
+    filter: blur(70px);
+  }
 }
