@@ -17,6 +17,7 @@ Additional description about the project and its features.
 - HTML,
 - JavaScript
 - Css
+- Bootstrap
 
 ## Live Demo
 
@@ -29,16 +30,11 @@ Additional description about the project and its features.
 - Go to (https://alexoid1.github.io/Animation-slider/) and have a look around. 
 
 
-
-
 In this project:
 
 - Trigger different animations at the same time.
 - Use Filter and keyframes.
 - Sounds for every animation.
-
-
-
 
 To get a local copy  and to set it up and running follow these simple example steps.
 
