@@ -9,18 +9,14 @@ audi4.src = 'sonidos/Explosivos detonó.wav';
 const audi5 = new Audio();
 audi5.src = 'sonidos/Tormenta 3.wav';
 
-
-const boton = document.getElementById('boton');
-boton.addEventListener('click', añade);
-const boton2 = document.getElementById('boton2');
-boton2.addEventListener('click', añade2);
-const boton3 = document.getElementById('boton3');
-boton3.addEventListener('click', añade3);
-const boton4 = document.getElementById('boton4');
-boton4.addEventListener('click', añade4);
-const boton5 = document.getElementById('boton5');
-boton5.addEventListener('click', añade5);
-
+function quitar1() {
+  const shoot = document.querySelector('.shoot');
+  const cont = document.querySelector('body');
+  const coursel1 = document.querySelector('.IMGG1');
+  cont.className = '';
+  shoot.classList.remove('shooting');
+  coursel1.classList.remove('shootTemblor');
+}
 
 function añade() {
   const cont = document.getElementById('carouselBody');
@@ -33,20 +29,17 @@ function añade() {
 
   setTimeout(quitar1, 8000);
 }
-function quitar1() {
-  const shoot = document.querySelector('.shoot');
+function quitar() {
   const cont = document.querySelector('body');
-  const coursel1 = document.querySelector('.IMGG1');
   cont.className = '';
-  shoot.classList.remove('shooting');
-  coursel1.classList.remove('shootTemblor');
 }
+
 
 function quitar4() {
   const cont = document.querySelector('body');
   const coursel = document.querySelector('.IMGG');
   cont.className = '';
-  coursel.classList.remove('temblor'), 8000;
+  coursel.classList.remove('temblor');
 }
 
 function añade2() {
@@ -75,7 +68,14 @@ function añade5() {
   setTimeout(quitar, 9000);
 }
 
-function quitar() {
-  const cont = document.querySelector('body');
-  cont.className = '';
-}
+
+const boton = document.getElementById('boton');
+boton.addEventListener('click', añade);
+const boton2 = document.getElementById('boton2');
+boton2.addEventListener('click', añade2);
+const boton3 = document.getElementById('boton3');
+boton3.addEventListener('click', añade3);
+const boton4 = document.getElementById('boton4');
+boton4.addEventListener('click', añade4);
+const boton5 = document.getElementById('boton5');
+boton5.addEventListener('click', añade5);
