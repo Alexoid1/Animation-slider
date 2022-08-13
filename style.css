@@ -71,6 +71,8 @@ body {
   color: black;
 }
 
+
+
 .play:hover {
   color: white;
 }
@@ -109,6 +111,30 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 775px) {
+  .play {
+    font-size: 20px;
+    line-height: 0.5em;
+  }
+  .play2 {
+    font-size: 20px;
+    line-height: 0.5em;
+  }
+
+  .play3 {
+    font-size: 20px;
+    line-height: 0.5em;
+  }
+
+  .play4 {
+    font-size: 20px;
+    line-height: 0.5em;
+  }
+
+  .play31 {
+    font-size: 20px;
+  }
+}
 #boton4 .play4:hover {
   color: #ffc600;
 }
